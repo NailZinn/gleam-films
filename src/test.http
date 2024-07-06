@@ -1,0 +1,32 @@
+@baseUrl = http://localhost:8000
+
+GET {{baseUrl}}/films
+
+###
+
+GET {{baseUrl}}/films/1
+
+###
+
+POST {{baseUrl}}/films
+Content-Type: application/json
+
+{
+  "name": "Film 1",
+  "year": 2024
+}
+
+###
+
+PUT {{baseUrl}}/films
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "New Film 1",
+  "year": 2025
+}
+
+###
+
+DELETE {{baseUrl}}/films/1
